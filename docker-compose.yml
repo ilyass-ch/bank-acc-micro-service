@@ -17,7 +17,7 @@ services:
     expose:
       - '9999'
     depends_on:
-      enset-ebank-discovery-service:
+      chakir-ebank-discovery-service:
         condition: service_healthy
 #    healthcheck:
 #      test: [ "CMD", "curl", "-f", "http://localhost:9999/actuator/health" ]
