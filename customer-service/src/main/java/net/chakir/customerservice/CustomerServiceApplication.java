@@ -21,12 +21,13 @@ public class CustomerServiceApplication {
     CommandLineRunner commandLineRunner(CustomerRepository customerRepository) {
         return args -> {
 
-            Customer customer1 = new Customer("ilyass", "chakir", "ilyass@gmail.com");
-            Customer customer2 = new Customer("monsef", "chakir", "monsef@gmail.com");
-            Customer customer3 = new Customer("sami", "redouani", "sam@gmail.com");
+            Customer customer1 = new Customer(null,"ilyass", "chakir", "ilyass@gmail.com");
+            Customer customer2 = new Customer(null,"monsef", "chakir", "monsef@gmail.com");
+            Customer customer3 = new Customer(null,"sami", "redouani", "sam@gmail.com");
 
             customerRepository.save(customer1); // L'ID est généré ici
             customerRepository.save(customer2);
+
             customerRepository.save(customer3);
 
         };
