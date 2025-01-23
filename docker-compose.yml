@@ -50,7 +50,7 @@ services:
       - DISCOVERY_SERVICE_URL=http://chakir-ebank-discovery-service:8761/eureka
       - CONFIG_SERVICE_URL=http://chakir-ebank-config-service:9999
     depends_on:
-      enset-customer-service:
+      chakir-ebank-customer-service:
         condition: service_healthy
   chakir-ebank-gateway-service:
     build: ./gateway-service
