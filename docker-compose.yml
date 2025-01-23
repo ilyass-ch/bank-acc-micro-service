@@ -24,7 +24,7 @@ services:
         condition: service_healthy
   chakir-ebank-customer-service:
     build: ./customer-service
-    container_name: chakir-ebank-config-service
+    container_name: chakir-ebank-customer-service
     ports:
       - '8081:8081'
     expose:
