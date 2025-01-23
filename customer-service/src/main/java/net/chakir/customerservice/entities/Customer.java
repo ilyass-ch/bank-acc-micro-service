@@ -16,13 +16,13 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @JsonProperty("email") // Indique à Jackson d'inclure cette propriété
+
     private String email;
 
-    @JsonProperty("firstName")
+
     private String firstName;
 
-    @JsonProperty("lastName")
+
     private String lastName;
 
     // Constructeur sans ID
