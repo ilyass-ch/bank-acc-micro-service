@@ -34,7 +34,7 @@ services:
       - CONFIG_SERVICE_URL=http://chakir-ebank-config-service:9999
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:8081/actuator/health" ]
-      interval: 10s
+      interval: 15s
       retries: 4
     depends_on:
       chakir-ebank-config-service:
